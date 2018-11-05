@@ -45,7 +45,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
-![alt text][./statistics/statistics.png]
+![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/statistics/statistics.png)
 
 ### Design and Test a Model Architecture
 
@@ -103,12 +103,12 @@ I think that converting back to RGB really helped. Also, a convolutions helped b
 
 Here are five German traffic signs that I found on the web:
 
-![alt text](./test samples/1.jpg)
-![alt text](./test samples/2.jpg)
-![alt text](./test samples/3.jpg)
-![alt text](./test samples/4.jpg)
-![alt text](./test samples/5.jpg)
-![alt text](./test samples/6.jfif)
+![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/1.jpg)
+![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/2.jpg)
+![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/3.jpg)
+![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/4.jpg)
+![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/5.jpg)
+![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/6.jfif)
 
 
 The images were only of different dimensions but i converted them to 32x32x3 images to be suitable for the network.
