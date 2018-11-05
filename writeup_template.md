@@ -35,11 +35,11 @@ You're reading it! and here is a link to my [project code](https://github.com/Ma
 I used the numpy library to calculate summary statistics of the traffic
 signs data set:
 
-* The size of training set is ?
-* The size of the validation set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+* The size of training set is ? 34799
+* The size of the validation set is ? 4410
+* The size of test set is ? 12630
+* The shape of a traffic sign image is ? 32x32x3
+* The number of unique classes/labels in the data set is ? 43 label/class
 
 #### 2. Include an exploratory visualization of the dataset.
 
@@ -86,15 +86,15 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
-At first, i used the LeNet architecture so that i could get an insight on the training. I also converted to grayscale but discarded it later.
+  * At first, i used the LeNet architecture so that i could get an insight on the training. I also converted to grayscale but discarded it later.
 * What were some problems with the initial architecture?
-It didn't get past .9 for the validation acuuracy so i tweaked it.
+  * It didn't get past .9 for the validation acuuracy so i tweaked it.
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-I discarded the grayscale and it got a better accuracy. I normalized the features and i increased the filter size on the first two convolutions. I increased the number of epochs and it worked
+  * I discarded the grayscale and it got a better accuracy. I normalized the features and i increased the filter size on the first two convolutions. I increased the number of epochs and it worked
 * Which parameters were tuned? How were they adjusted and why?
-learning rate, epochs and the sigma(Variance) for intializing the weights and biases. the learning rate was reduced to prevent convergence of the model. I increased the epochs to get a better model accuracy. and the sigma helped at the initial epoch accuracy
+  * learning rate, epochs and the sigma(Variance) for intializing the weights and biases. the learning rate was reduced to prevent convergence of the model. I increased the epochs to get a better model accuracy. and the sigma helped at the initial epoch accuracy
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-I think that converting back to RGB really helped. Also, a convolutions helped because normally convolutions and shared parameters help with the images classification. Dropouts helped with the overfitting and it made the predictions morerobust.
+  * I think that converting back to RGB really helped. Also, a convolutions helped because normally convolutions and shared parameters help with the images classification. Dropouts helped with the overfitting and it made the predictions morerobust.
 
 
 ### Test a Model on New Images
