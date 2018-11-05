@@ -104,10 +104,15 @@ I think that converting back to RGB really helped. Also, a convolutions helped b
 Here are five German traffic signs that I found on the web:
 
 ![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/1.jpg)
+
 ![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/2.jpg)
+
 ![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/3.jpg)
+
 ![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/4.jpg)
+
 ![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/5.jpg)
+
 ![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/6.jfif)
 
 
