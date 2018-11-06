@@ -79,6 +79,11 @@ To train the model, I used Adam optimiser as my optimising technique. I used a 1
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
+* I used an iterative way to enhance the LeNet architecture to get a better accuracy on validation set. I first normalized, shuffled the data and
+converted them to gray images, then i thought that some colors maybe helpful to classify so i reverted back to the RGB color space and it did get a better accuracy. I changed the variance of the intialized weights and biases to increase the training speed, but i somwhat decreased the learning rate to ensure convergence. I tried changing the layers and filters size in the convolutions and fully connected layers to increase the accuracy of the Model, and it did get a better accuracy. I also increased the number of epochs to 15 to increase the accuracy on the validation, but only stayed at
+15 epochs to maintain a reasonable training time -didn't take too much though. about 1 min on my local pc.- It's only worth noting that i didn't Choose
+the model accuracy based on the test set. I actually started measuring it at a very late stage of the project. I also tried a couple optimisers the normal gradient descent and Adam optimiser and as most cases that power Adam optimiser with momentum and adaptive learning rates was better.
+
 My final model results were:
 * training set accuracy of 0.997
 * validation set accuracy of 0.956
@@ -116,7 +121,8 @@ Here are five German traffic signs that I found on the web:
 ![alt text](https://github.com/Mahmoud-Selim/CarND-Traffic-Sign-Classifier-Project/blob/master/test%20samples/6.jfif)
 
 
-The images were only of different dimensions but i converted them to 32x32x3 images to be suitable for the network.
+The images were only of different dimensions but i converted them to 32x32x3 images to be suitable for the network. The angle of the camera was somewhat
+different in some images, as well as there were some background objects such as cars but it wasn't a problem thanks to convolutional neural networks. The images brightness were high which was a little bit different from the training set.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
